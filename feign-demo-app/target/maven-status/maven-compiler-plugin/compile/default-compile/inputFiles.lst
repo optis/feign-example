@@ -1,0 +1,5 @@
+/Users/aikobeyers/Documents/Optis/Feign blogpost/feign-demo-app/src/main/java/com/optis/feigndemoapp/client/ReservationClient.java
+/Users/aikobeyers/Documents/Optis/Feign blogpost/feign-demo-app/src/main/java/com/optis/feigndemoapp/dto/ReservationDto.java
+/Users/aikobeyers/Documents/Optis/Feign blogpost/feign-demo-app/src/main/java/com/optis/feigndemoapp/FeignDemoApp.java
+/Users/aikobeyers/Documents/Optis/Feign blogpost/feign-demo-app/src/main/java/com/optis/feigndemoapp/dto/ResourceTransformer.java
+/Users/aikobeyers/Documents/Optis/Feign blogpost/feign-demo-app/src/main/java/com/optis/feigndemoapp/model/Reservation.java

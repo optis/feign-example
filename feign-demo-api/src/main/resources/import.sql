@@ -1,0 +1,3 @@
+insert into reservations(id, amount_of_people, date_of_reservation, time_of_reservation, reservation_number) values(1, 3, '2019-02-13', '16:00:00', 12345);
+insert into reservations(id, amount_of_people, date_of_reservation, time_of_reservation, reservation_number) values(2, 2, '2019-02-16', '19:30:00', 12346);
+insert into reservations(id, amount_of_people, date_of_reservation, time_of_reservation, reservation_number) values(3, 2, '2019-02-16', '20:30:00', 12347);
