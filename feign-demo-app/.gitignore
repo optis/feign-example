@@ -10,7 +10,6 @@
 .springBeans
 .sts4-cache
 
-
 ### IntelliJ IDEA ###
 .idea
 /.idea
@@ -24,5 +23,4 @@
 /nbbuild/
 /dist/
 /nbdist/
-/.nb-gradle/
 /build/
