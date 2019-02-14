@@ -37,8 +37,6 @@
       <scope>test</scope>
     </dependency>
 
-    mvn clean spring-boot:run
-
     <dependency>
       <groupId>io.github.openfeign</groupId>
       <artifactId>feign-core</artifactId>

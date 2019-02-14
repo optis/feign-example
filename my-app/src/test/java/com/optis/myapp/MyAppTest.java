@@ -5,8 +5,11 @@ import com.optis.myapp.dto.ResourceTransformer;
 import com.optis.myapp.model.Reservation;
 import feign.Feign;
 import feign.gson.GsonDecoder;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.TestInstance.Lifecycle;
 
 
 import java.time.LocalDate;
@@ -18,6 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * Unit test for simple MyApp.
  */
+@TestInstance(Lifecycle.PER_CLASS)
 public class MyAppTest
 
 {
@@ -26,7 +30,7 @@ public class MyAppTest
     /**
      * Create the client
      */
-    @BeforeEach
+    @BeforeAll
     public void setUp(){
         this.client = Feign.builder()
                 .decoder(new GsonDecoder())
@@ -47,7 +51,6 @@ public class MyAppTest
     @Test
     public void testFindAll(){
         List<Reservation> reservations = ResourceTransformer.transformDtosToReservations(client.findAll());
-
         assertEquals(3, reservations.size());
     }
 
