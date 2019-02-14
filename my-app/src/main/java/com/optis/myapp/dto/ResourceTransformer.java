@@ -8,19 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ResourceTransformer {
-    public static List<Reservation> transformDtosToReservations(List<ReservationDto> reservationDtos) {
-        List<Reservation> result = new ArrayList<>();
-
-        for (ReservationDto reservationDto : reservationDtos) {
-            Reservation reservation = new Reservation();
-            reservation.setReservationNumber(reservationDto.getReservationNumber());
-            reservation.setAmountOfPeople(reservationDto.getAmountOfPeople());
-            reservation.setDateOfReservation(LocalDate.parse(reservationDto.getDateOfReservation()));
-            reservation.setTimeOfReservation(LocalTime.parse(reservationDto.getTimeOfReservation()));
-            result.add(reservation);
-        }
-        return result;
-    }
 
     public static Reservation transformDtoToReservation(ReservationDto reservationDto) {
         Reservation reservation = new Reservation();
@@ -30,5 +17,14 @@ public class ResourceTransformer {
         reservation.setTimeOfReservation(LocalTime.parse(reservationDto.getTimeOfReservation()));
 
         return reservation;
+    }
+
+    public static List<Reservation> transformDtosToReservations(List<ReservationDto> reservationDtos) {
+        List<Reservation> result = new ArrayList<>();
+
+        for (ReservationDto reservationDto : reservationDtos) {
+            result.add(transformDtoToReservation(reservationDto));
+        }
+        return result;
     }
 }
