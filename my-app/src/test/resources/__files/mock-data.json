@@ -1,0 +1,20 @@
+[
+  {
+    "reservationNumber":12345,
+    "dateOfReservation":"2019-02-13",
+    "timeOfReservation":"16:00:00",
+    "amountOfPeople":3
+  },
+  {
+    "reservationNumber":12346,
+    "dateOfReservation":"2019-02-16",
+    "timeOfReservation":"19:30:00",
+    "amountOfPeople":2
+  },
+  {
+    "reservationNumber":12347,
+    "dateOfReservation":"2019-02-16",
+    "timeOfReservation":"20:30:00",
+    "amountOfPeople":2
+  }
+]
